@@ -1,0 +1,28 @@
+# 数据文件
+data/raw/*.csv
+data/ods/
+data/dwd/
+data/dws/
+data/ads/
+data/*.duckdb
+
+# 输出文件
+output/reports/*.csv
+output/figures/*.png
+output/quality_report.txt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db

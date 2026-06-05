@@ -1,0 +1,16 @@
+# Data files (too large for git, download from Kaggle)
+data/*.csv
+data/*.zip
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# OS files
+.DS_Store
+Thumbs.db

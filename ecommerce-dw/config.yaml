@@ -1,0 +1,36 @@
+# ============================================================
+# ShopEasy 电商数据仓库 - 全局配置文件
+# ============================================================
+
+# 数据库配置
+database:
+  path: "data/shopeasy.duckdb"       # DuckDB 数据库文件路径
+
+# 数据路径
+data:
+  raw_dir: "data/raw"                # 原始 CSV 数据目录
+  ods_dir: "data/ods"                # ODS 层 Parquet 输出目录
+  dwd_dir: "data/dwd"                # DWD 层 Parquet 输出目录
+  dws_dir: "data/dws"                # DWS 层 Parquet 输出目录
+  ads_dir: "data/ads"                # ADS 层 Parquet 输出目录
+
+# 输出路径
+output:
+  reports_dir: "output/reports"      # 最终报表 CSV 导出目录
+  figures_dir: "output/figures"      # 可视化图表导出目录
+  quality_report: "output/quality_report.txt"  # 数据质量报告
+
+# 数据生成参数
+generate:
+  seed: 42                           # 随机种子（保证结果可复现）
+  start_date: "2024-01-01"           # 数据起始日期
+  end_date: "2025-12-31"             # 数据结束日期
+  n_orders: 25000                    # 订单数量
+  n_users: 5000                      # 用户数量
+  n_products: 500                    # 商品数量
+
+# 数据质量阈值
+quality:
+  max_null_rate: 0.05                # 最大允许空值率
+  max_duplicate_rate: 0.01           # 最大允许重复率
+  referential_integrity_min: 0.95    # 参照完整性最低比例
