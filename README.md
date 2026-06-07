@@ -2,7 +2,7 @@
 
 > 从商业理解到数据洞察，用数据驱动业务决策。
 
-6 个数据分析项目，覆盖电商全链路分析、数据仓库 ETL、交互看板、机器学习与统计推断。
+7 个数据分析项目，覆盖电商全链路分析、数据仓库 ETL、交互看板、机器学习、推荐系统与统计推断。
 
 ---
 
@@ -16,6 +16,7 @@
 | 4 | [水军检测系统](网络水军/) | Python · BERT · XGBoost | 8 步 ML Pipeline，F1 0.84，AUC 0.976 |
 | 5 | [A/B 测试分析](ab-test-analysis/) | SciPy · Statsmodels | Z 检验 · Bootstrap · 分层分析 · 业务决策 |
 | 6 | [财务管理系统](demo2/) | Java · Spring Boot · MySQL | 复式记账，13 个 REST API，三大财务报表 |
+| 7 | [推荐系统对比](ml-1m/) | Python · PyTorch · Pandas | 3 模型递进对比：BPR-MF → HybridMF → SASRec，5 项指标评估 |
 
 ---
 
@@ -31,7 +32,7 @@
 |------|------|
 | 数据分析 | Python · Pandas · NumPy · SQL · Jupyter · SciPy |
 | 数据工程 | DuckDB · ETL · 数据仓库建模 · 数据质量监控 |
-| 机器学习 | Scikit-learn · XGBoost · LightGBM · BERT · SHAP |
+| 机器学习 | Scikit-learn · XGBoost · LightGBM · PyTorch · BERT · SHAP |
 | 可视化 | Streamlit · Plotly · Matplotlib · Seaborn |
 | 统计方法 | 假设检验 · Bootstrap · A/B Testing · 效应量 |
 | 后端 | Spring Boot · MyBatis · MySQL · RESTful API |
