@@ -10,13 +10,13 @@
 
 | # | 项目 | 技术栈 | 简介 |
 |---|------|--------|------|
-| 1 | [Olist 电商分析](cc/olist-ecommerce-analysis/) | Python · SQLite · Pandas | 9 表关联 100K+ 订单，RFM / Cohort / SQL |
-| 2 | [电商数据仓库](ecommerce-dw/) | Python · DuckDB · SQL | ODS→DWD→DWS→ADS 四层架构，10 张指标表 |
+| 1 | [Olist 电商分析](olist-ecommerce-analysis/) | Python · SQLite · Pandas | 9 表关联 100K+ 订单，RFM / Cohort / SQL |
+| 2 | [电商数据仓库](ecommerce-data-warehouse/) | Python · DuckDB · SQL | ODS→DWD→DWS→ADS 四层架构，10 张指标表 |
 | 3 | [电商运营看板](ecommerce-dashboard/) | Streamlit · Plotly | 5 页交互看板，15+ 种可视化图表 |
-| 4 | [水军检测系统](网络水军/) | Python · BERT · XGBoost | 8 步 ML Pipeline，F1 0.84，AUC 0.976 |
+| 4 | [水军检测系统](fake-review-detection/) | Python · BERT · XGBoost | 8 步 ML Pipeline，F1 0.84，AUC 0.976 |
 | 5 | [A/B 测试分析](ab-test-analysis/) | SciPy · Statsmodels | Z 检验 · Bootstrap · 分层分析 · 业务决策 |
-| 6 | [财务管理系统](demo2/) | Java · Spring Boot · MySQL | 复式记账，13 个 REST API，三大财务报表 |
-| 7 | [推荐系统对比](ml-1m/) | Python · PyTorch · Pandas | 3 模型递进对比：BPR-MF → HybridMF → SASRec，5 项指标评估 |
+| 6 | [财务管理系统](finance-management-system/) | Java · Spring Boot · MySQL | 复式记账，13 个 REST API，三大财务报表 |
+| 7 | [推荐系统对比](recommender-system-comparison/) | Python · PyTorch · Pandas | 3 模型递进对比：BPR-MF → HybridMF → SASRec，5 项指标评估 |
 
 ---
 
@@ -47,7 +47,7 @@ git clone https://github.com/LEE-ee01/projects.git
 cd projects
 
 # 数据仓库项目
-cd ecommerce-dw
+cd ecommerce-data-warehouse
 pip install -r requirements.txt
 python scripts/00_generate_data.py
 python scripts/01_ods_load.py
